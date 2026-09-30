@@ -4,7 +4,7 @@ name = "Jose María Cortés"
 age = 20
 height = 1.73
 is_student = True
-
+class = "ASIR"
 print(f"{name} | {age} | {height} m | Student: {is_student}")
 # name guarda el nombre de la persona en una variable de tipo texto.
 # age guarda la edad en una variable numérica entera.
