@@ -1,6 +1,0 @@
-# act02_variables.py
-name = "José María Cortés"
-age = 20
-height = 1.73
-student = True
-print(f"{name} | {age} | {height} m")
