@@ -1,0 +1,9 @@
+# predict_expressions.py
+ num = int
+
+if num % 2 == 0{
+                print ("The number is par")
+                }
+else{
+      print ("The number is impar")
+      }
