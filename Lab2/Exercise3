@@ -1,0 +1,11 @@
+n = int (input("Enter a number: "))
+sum = n * (n * 1)
+sum_squeares = (n * (n + 1) * ((2 * n) + 1)) / 6
+weight = int(input("Input your weight: "))
+height = float(input("Input your height: "))
+mass_index = (weight / (height ** 2))
+
+print (f"n: {n}")
+print (f"sum: {sum}")
+print (f"sum of squeares: {sum_squeares}")
+print (f"Weight: {weight}")
