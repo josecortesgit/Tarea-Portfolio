@@ -1,0 +1,20 @@
+# Introducir datos
+num_segundos = int(input("Seconds: "))
+
+# 2. second por day
+segundos_dia = 24 * 60 * 60
+
+# 3. Días y resto
+dias = num_segundos // segundos_dia
+resto = num_segundos % segundos_dia
+
+# 4. Horas y nuevo resto
+horas = resto // 3600
+resto = resto % 3600
+
+# 5. Minutos y segundos finales
+minutos = resto // 60
+segundos = resto % 60
+
+# 6. Salida
+print(f"{num_segundos} seconds are {dias} days, {horas} hours, {minutos} minutes and {segundos} seconds")
