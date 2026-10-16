@@ -1,0 +1,11 @@
+usage = input ("introduce el nombre:")
+
+GROWTH = 0.06
+
+month = usage * (1 * GROWTH)
+month2 = month * (1 * GROWTH)
+month = month2 * (1 * GROWTH)
+
+print (f"Month:{month:.2f}")
+print (f"Month2:{month2:.2f}")
+print (f"Month3:{month3:.2f}")
