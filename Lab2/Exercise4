@@ -1,0 +1,4 @@
+full_name = input("Enter the full name: ")
+print(f"Full name: {full_name.upper()}")
+sin_espacios = full_name.replace(" ", "")
+print(f"{len(sin_espacios)}")
