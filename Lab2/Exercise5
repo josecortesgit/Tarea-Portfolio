@@ -1,0 +1,22 @@
+date_input = input("Date: ")
+partes_fecha = date_input.split("/")
+
+dia = partes_fecha[0].zfill(2)
+mes = partes_fecha[1].zfill(2)
+anio = partes_fecha[2]
+
+print(f"Date: {dia}/{mes}/{anio}")
+
+product = input("Product: ")
+unit_price = float(input("Unit price: "))
+quantity = int(input("Quantity: "))
+
+euros = int(unit_price)
+# round((price - euros) * 100) asegura que no haya errores de precisión flotante
+cents = round((unit_price - euros) * 100)
+
+print(f"Euros: {euros} Cents: {cents}")
+
+total = unit_price * quantity
+
+print(f"{product} {unit_price:09.2f} {quantity:03d} {total:011.2f}")
