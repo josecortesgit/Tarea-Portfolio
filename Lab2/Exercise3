@@ -1,11 +1,13 @@
-n = int (input("Enter a number: "))
-sum = n * (n * 1)
-sum_squeares = (n * (n + 1) * ((2 * n) + 1)) / 6
-weight = int(input("Input your weight: "))
-height = float(input("Input your height: "))
-mass_index = (weight / (height ** 2))
+n = int(input("n: "))
 
-print (f"n: {n}")
-print (f"sum: {sum}")
-print (f"sum of squeares: {sum_squeares}")
-print (f"Weight: {weight}")
+sum = n * (n + 1) // 2
+sum_squeares = (n * (n + 1) * ((2 * n) + 1)) // 6
+
+print(f"Sum: {sum}")
+print(f"Sum of squares: {sum_squeares}")
+
+weight = float(input("Weight (kg): "))
+height = float(input("Height (m): "))
+
+mass_index = weight / (height ** 2)
+print(f"Your Body Mass Index is {mass_index:.2f}")
