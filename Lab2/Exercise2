@@ -1,11 +1,13 @@
-usage = input ("introduce el nombre:")
+usage = float(input("Current usage (GB): "))
 
 GROWTH = 0.06
 
-month = usage * (1 * GROWTH)
-month2 = month * (1 * GROWTH)
-month = month2 * (1 * GROWTH)
+# Cálculo
+month1 = usage * (1 + GROWTH)
+month2 = month1 * (1 + GROWTH)
+month3 = month2 * (1 + GROWTH)
 
-print (f"Month:{month:.2f}")
-print (f"Month2:{month2:.2f}")
-print (f"Month3:{month3:.2f}")
+# Salida
+print(f"Month 1: {month1:.2f} GB")
+print(f"Month 2: {month2:.2f} GB")
+print(f"Month 3: {month3:.2f} GB")
