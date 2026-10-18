@@ -1,4 +1,14 @@
-full_name = input("Enter the full name: ")
-print(f"Full name: {full_name.upper()}")
+full_name = input("Full name: ").strip()
+
 sin_espacios = full_name.replace(" ", "")
-print(f"{len(sin_espacios)}")
+num_letras = len(sin_espacios)
+
+print(f"{full_name.upper()} has {num_letras} letters")
+
+palabras = full_name.split()
+inicial_nombre = palabras[0][0]  # Primera letra del nombre
+primer_apellido = palabras[1]    # Primer apellido
+
+username = (inicial_nombre + primer_apellido).lower()
+
+print(f"Username: {username}")
