@@ -1,5 +1,5 @@
 
-# 1. Countdown
+# 1. Cuenta atras
 
 n = int(input("Enter a number: "))
 
@@ -9,7 +9,7 @@ while n >= 0:
     n -= 1
 
 
-# 2. Sum and average
+# 2. Suma y media
 
 total = 0
 count = 0
@@ -30,7 +30,7 @@ else:
     print("No numbers entered")
 
 
-# 3. Multiplication table
+# 3. Tabla de multiplicar
 
 number = int(input("Enter a number: "))
 
@@ -38,7 +38,7 @@ for i in range(1, 11):
     print(number, "x", i, "=", number * i)
 
 
-# 4. Port validation
+# 4. Validacion
 
 port = int(input("Enter a port (1-65535): "))
 
